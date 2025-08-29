@@ -72,7 +72,7 @@ function Nav() {
               VISION
             </li>
             <li className="text-lg font-semibold transition cursor-pointer hover:text-red-500">
-              ACHIEVEMENTS
+              <Link to="/achievements">ACHIEVEMENTS</Link>
             </li>
             <li className="text-lg font-semibold transition cursor-pointer hover:text-red-500">
               CONTACT
