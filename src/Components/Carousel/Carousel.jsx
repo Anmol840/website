@@ -36,7 +36,7 @@ function App() {
     { img: slide_image_8, text: "Slide 8" },
   ];
 
-  const slides = [...slidesData, ...slidesData]; // duplicate for loop
+  const slides = [...slidesData, ...slidesData]; 
 
   return (
     <div className="carce mt-[25%]">
@@ -45,13 +45,13 @@ function App() {
   grabCursor={true}
   centeredSlides={true}
   loop={true}
-  slidesPerView={3}        // default 3 slides visible
-  spaceBetween={30}        // 30px gap between slides
+  slidesPerView={3}        
+  spaceBetween={30}        
   autoplay={{ delay: 2000, disableOnInteraction: false }}
   speed={800}
   breakpoints={{
-    600: { slidesPerView: 3, spaceBetween: 30 }, // tablet
-    1024: { slidesPerView: 5, spaceBetween: 30 } // desktop
+    600: { slidesPerView: 3, spaceBetween: 30 }, 
+    1024: { slidesPerView: 5, spaceBetween: 30 } 
   }}
   coverflowEffect={{
     rotate: 0,
