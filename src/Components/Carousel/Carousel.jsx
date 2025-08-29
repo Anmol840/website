@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -23,54 +23,73 @@ import slide_image_7 from "../../assets/img_7.jpg";
 import slide_image_8 from "../../assets/img_8.jpg";
 
 function App() {
+  const swiperRef = useRef(null);
+
   const slidesData = [
-    { img: slide_image_1, text: "Slide " },
-    { img: slide_image_2, text: "Slide " },
-    { img: slide_image_3, text: "Slide " },
-    { img: slide_image_4, text: "Slide " },
-    { img: slide_image_5, text: "Slide " },
-    { img: slide_image_6, text: "Slide " },
-    { img: slide_image_7, text: "Slide " },
-    { img: slide_image_8, text: "Slide " },
+    { img: slide_image_1, text: "Slide 1" },
+    { img: slide_image_2, text: "Slide 2" },
+    { img: slide_image_3, text: "Slide 3" },
+    { img: slide_image_4, text: "Slide 4" },
+    { img: slide_image_5, text: "Slide 5" },
+    { img: slide_image_6, text: "Slide 6" },
+    { img: slide_image_7, text: "Slide 7" },
+    { img: slide_image_8, text: "Slide 8" },
   ];
 
   const slides = [...slidesData, ...slidesData]; // duplicate for loop
 
   return (
-    <div className="carce">
+    <div className="carce mt-[25%]">
       <Swiper
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={5}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        speed={800}
-        breakpoints={{ 600: { slidesPerView: 3 }, 1024: { slidesPerView: 5 } }}
-        coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 2.5 }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="swiper_container"
-      >
+  effect="coverflow"
+  grabCursor={true}
+  centeredSlides={true}
+  loop={true}
+  slidesPerView={3}        // default 3 slides visible
+  spaceBetween={30}        // 30px gap between slides
+  autoplay={{ delay: 2000, disableOnInteraction: false }}
+  speed={800}
+  breakpoints={{
+    600: { slidesPerView: 3, spaceBetween: 30 }, // tablet
+    1024: { slidesPerView: 5, spaceBetween: 30 } // desktop
+  }}
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5
+  }}
+  pagination={{ clickable: true }}
+  navigation={true}
+  modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+  className="swiper_container"
+  onSwiper={(swiper) => (swiperRef.current = swiper)}
+>
+
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="w-[250px] h-[120px]">
-            <div className="relative w-full h-full">
+          <SwiperSlide
+  key={index}
+  className="w-[500px] h-[300px] md:w-[600px] md:h-[350px] lg:w-[700px] lg:h-[400px]"
+  onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+  onMouseLeave={() => swiperRef.current?.autoplay.start()}
+>
+
+            <div className="relative w-full h-full group overflow-hidden rounded-xl">
               {/* Image */}
               <img
                 src={slide.img}
                 alt={`slide_${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-
-              {/* Text at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 pb-[20%] pl-[20%] pr-[50%]">
-                <div className="text-xl font-semibold text-white">
+              {/* Overlay (hidden until hover) */}
+              <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="text-xl font-semibold text-white mb-3">
                   {slide.text}
                 </div>
+                <button className="px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200 transition">
+                  View Details
+                </button>
               </div>
             </div>
           </SwiperSlide>
