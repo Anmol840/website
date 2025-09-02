@@ -84,6 +84,9 @@ const Team1 = () => {
             <div>
                 <Team1dm />
             </div>
+            <div>
+              <Carousel />
+            </div>
           </div>
         </div>
         <hr className="bg-black border-b border-red-500 mb-[5%]"></hr>
