@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from "react";
 import "./Achievements.css";
 import { Link } from "react-router-dom";
@@ -78,12 +77,12 @@ const Achievements = () => {
             </div>
 
             {/* Text + Button Below */}
-            <div className="flex flex-col items-center justify-center space-y-4 bg-gray-900 rounded-lg p-6 shadow-md text-center mt-8">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-[#212121] rounded-lg p-6 shadow-md text-center mt-8">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white font-light max-w-2xl">
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >
                   Zeal Drag 2.0{" "}
@@ -94,8 +93,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Indian Karting Championship 2</span></b><br />
                 •	OVERALL 4TH<br />
@@ -103,8 +102,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >National Super karting Championship</span></b><br />
                 •	Overall, Runner Up<br />
@@ -164,12 +163,12 @@ const Achievements = () => {
             </div>
 
             {/* Text + Button Below */}
-            <div className="flex flex-col items-center justify-center space-y-4 bg-gray-900 rounded-lg p-6 shadow-md text-center mt-8">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-[#212121] rounded-lg p-6 shadow-md text-center mt-8">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white font-light max-w-2xl">
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >
                   Zealdrag 3.0 (2019) -Zeal College, Pune{" "}
@@ -180,8 +179,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Indian Karting Championship 4 (2020)
                 </span></b><br />
@@ -232,12 +231,12 @@ const Achievements = () => {
             </div>
 
             {/* Text + Button Below */}
-            <div className="flex flex-col items-center justify-center space-y-4 bg-gray-900 rounded-lg p-6 shadow-md text-center mt-8">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-[#212121] rounded-lg p-6 shadow-md text-center mt-8">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white font-light max-w-2xl">
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >
                   Zealdrag 3.0 (2019) -Zeal College, Pune{" "}
@@ -257,8 +256,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Indian Karting Championship 4 (2020)
                 </span></b><br />
@@ -309,12 +308,12 @@ const Achievements = () => {
             </div>
 
             {/* Text + Button Below */}
-            <div className="flex flex-col items-center justify-center space-y-4 bg-gray-900 rounded-lg p-6 shadow-md text-center mt-8">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-[#212121] rounded-lg p-6 shadow-md text-center mt-8">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white font-light max-w-2xl">
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >
                   Zealdrag 3.0 (2019) -Zeal College, Pune{" "}
@@ -334,8 +333,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Indian Karting Championship 4 (2020)
                 </span></b><br />
@@ -374,12 +373,12 @@ const Achievements = () => {
             </div>
 
             {/* Text + Button Below */}
-            <div className="flex flex-col items-center justify-center space-y-4 bg-gray-900 rounded-lg p-6 shadow-md text-center mt-8">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-[#212121] rounded-lg p-6 shadow-md text-center mt-8">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-white font-light max-w-2xl">
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >
                   Hands-On Vehicle Expertise:{" "}
@@ -390,8 +389,8 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Exploration of Various Technical Branches Beyond Our Core:
                 </span></b><br />
@@ -400,16 +399,16 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Mastery of Manufacturing Processes:
                 </span></b><br />
                 Hands-on experience in various manufacturing techniques, including welding, grinding, and bending.    <br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Knowledge Acquisition in Non-Technical Departments:
                 </span></b><br />
@@ -417,32 +416,32 @@ const Achievements = () => {
 
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Effective Team Communication:
                 </span></b><br />
                 Developed strong communication skills within the team for seamless collaboration.     <br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Demonstrated Leadership Qualities:
                 </span></b><br />
                 Exhibited leadership qualities, leading and influencing team members effectively.<br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Polished Presenting Skills:
                 </span></b><br />
                 Honed the ability to deliver compelling presentations with confidence and impact.       <br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Efficient Time Management:
                 </span></b><br />
@@ -450,40 +449,40 @@ const Achievements = () => {
                 <br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Business Management Acumen:
                 </span></b><br />
                 Gained insights into business management aspects, including budgeting and financial considerations.<br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Hands-On Experience with Various Simulating Software:
                 </span></b><br />
                 Developed proficiency in using various simulation tools for analysis and optimization.<br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Effective Decision-Making Skills:
                 </span></b><br />
                 Exhibited the ability to make informed decisions efficiently.    <br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Innovative Thinking and Problem-Solving:
                 </span></b><br />
                 Cultivated innovative thinking skills, applying creative solutions to challenges.<br /><br />
                 ⮚<b><span
                   style={{
-                    fontFamily: "cursive",
-                    color: "red",
+                    fontFamily: "sans-serif",
+                    color: "Red",
                   }}
                 >Understanding the Vehicle Market:
                 </span></b><br />
